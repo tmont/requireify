@@ -7,12 +7,14 @@ files.
 It accomplishes this by wrapping the contents of the file in a `module.exports = '<contents>'` block.
 
 ## Installation
-Install via NPM: `npm install requireify`
+Install via NPM: `npm install browserify-requireify`
+
+`requireify` is already taken :(
 
 ## Usage
 ```javascript
 var browserify = require('browserify'),
-    requireify = require('requireify');
+    requireify = require('browserify-requireify');
 
 var b = browserify([ 'my/files/and/stuff.js' ]);
 b.transform(requireify({

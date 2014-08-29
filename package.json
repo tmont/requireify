@@ -1,5 +1,5 @@
 {
-	"name": "requireify",
+	"name": "browserify-requireify",
 	"version": "0.0.1",
 	"description": "Require any type of file when using browserify",
 	"keywords": [ "require", "browserify" ],
