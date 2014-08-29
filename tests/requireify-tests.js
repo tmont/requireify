@@ -25,7 +25,7 @@ describe('requireify', function() {
 
 	it('should exportify allowed type', function(done) {
 		var b = browserify([ getFile('files/require-foo.js') ]);
-		b.transform(requireify({ allowed: [ 'txt' ] }));
+		b.transform(requireify({ extensions: [ 'txt' ] }));
 
 		b.bundle(function(err, buffer) {
 			should.not.exist(err);
@@ -36,7 +36,7 @@ describe('requireify', function() {
 
 	it('should escape backslashes', function(done) {
 		var b = browserify([ getFile('files/require-backslashes.js') ]);
-		b.transform(requireify({ allowed: [ 'html' ] }));
+		b.transform(requireify({ extensions: [ 'html' ] }));
 
 		b.bundle(function(err, buffer) {
 			should.not.exist(err);
@@ -47,7 +47,7 @@ describe('requireify', function() {
 
 	it('should escape single quotes', function(done) {
 		var b = browserify([ getFile('files/require-single-quotes.js') ]);
-		b.transform(requireify({ allowed: [ 'txt' ] }));
+		b.transform(requireify({ extensions: [ 'txt' ] }));
 
 		b.bundle(function(err, buffer) {
 			should.not.exist(err);
@@ -58,7 +58,7 @@ describe('requireify', function() {
 
 	it('should replace newlines', function(done) {
 		var b = browserify([ getFile('files/require-newlines.js') ]);
-		b.transform(requireify({ allowed: [ 'txt' ] }));
+		b.transform(requireify({ extensions: [ 'txt' ] }));
 
 		b.bundle(function(err, buffer) {
 			should.not.exist(err);

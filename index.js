@@ -11,13 +11,13 @@ function str2js(str) {
 
 function requireify(options) {
 	options = options || {};
-	options.allowed = (options.allowed || []).map(function(ext) {
+	options.extensions = (options.extensions || []).map(function(ext) {
 		return ext.toLowerCase();
 	});
 
 	return function(file) {
 		var ext = path.extname(file).substring(1);
-		if (options.allowed.indexOf(ext) === -1) {
+		if (options.extensions.indexOf(ext) === -1) {
 			return through();
 		}
 
