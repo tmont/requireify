@@ -1,4 +1,6 @@
 # requireify
+[![Build Status](https://travis-ci.org/tmont/requireify.png)](https://travis-ci.org/tmont/requireify)
+
 A [browserify](http://browserify.org/) transform for `require()`-ing non-JS
 files.
 
