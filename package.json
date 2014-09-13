@@ -3,6 +3,10 @@
 	"version": "0.1.0",
 	"description": "Require any type of file when using browserify",
 	"keywords": [ "require", "browserify" ],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:tmont/requireify.git"
+	},
 	"files": [ "index.js" ],
 	"scripts": {
 		"test": "node_modules/.bin/mocha -R spec tests/requireify-tests.js"
