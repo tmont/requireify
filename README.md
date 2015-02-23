@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/tmont/requireify.png)](https://travis-ci.org/tmont/requireify)
 
 A [browserify](http://browserify.org/) transform for `require()`-ing non-JS
-files.
+files. Should work with browserify >= 5.x.x.
 
 It accomplishes this by wrapping the contents of the file in a `module.exports = '<contents>'` block.
 
